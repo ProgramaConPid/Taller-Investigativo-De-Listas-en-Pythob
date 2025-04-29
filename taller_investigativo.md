@@ -2,23 +2,21 @@
 
 # 1. ¿Qué es un array o lista en Python?
 
-* Investiga qué son los arrays (o listas) en Python y para qué se utilizan.
+* **Investiga qué son los arrays (o listas) en Python y para qué se utilizan.**
 
 R/= Son estructuras de datos versatiles que permiten almacenar una coleccion ordenada de elementos
 
-* ¿Cómo se declara una lista vacía?
+* >¿Cómo se declara una lista vacía?
 
 R/= mi_lista = []
 
-* ¿Cómo se crea una lista con valores iniciales?
+* >¿Cómo se crea una lista con valores iniciales?
 
 R/= mi_lista = ["valor1", "valor2", "valor3"]
 
 ### EJEMPLO PRACTICO 
 
 * Crea una lista llamada mi_lista con los números del 1 al 5.
-
-### EN CODIGO &#8595;
 
 ```python
 
@@ -30,7 +28,7 @@ mi_lista = [1, 2, 3, 4, 5]
 
 # 2. ¿Cómo accedemos a los elementos de una lista?
 
-* ¿Cómo se accede al primer elemento de una lista?
+* >¿Cómo se accede al primer elemento de una lista?
 
 R/= En los arrays y/o listas el primer indice de este generalmente es el 0 por lo tanto:
 
@@ -38,11 +36,11 @@ Array -> mi_array = ["hola", "pepe"] - Acceder primer elemento &larr; print(mi_a
 
 La ejecucion imprimiria &larr; "hola"
 
-* ¿Qué significa usar un índice negativo?
+* >¿Qué significa usar un índice negativo?
 
 R/= Los indices negativos permiten acceder a los elementos desde el final de una lista, es decir: la posicion [-1] seria el ultimo elemento, la posicion [-2] seria el elemento anterior al ultimo y asi sucesivamente.
 
-* ¿Qué pasa si intento acceder a un índice que no existe?
+* >¿Qué pasa si intento acceder a un índice que no existe?
 
 R/= Al intentar acceder a un indice inexistente de una lista, python arrojara un error diciendo que el indice de la lista esta fuera del rango.
 
@@ -66,11 +64,11 @@ print(mi_lista[-1]) # Imprime 40
 
 # 3. ¿Qué es el "slicing" o rebanado de listas?
 
-* ¿Qué significa "slicing" en listas?
+* >¿Qué significa "slicing" en listas?
 
 R/= es una forma de extraer una subsección de una secuencia (como una lista, tupla o cadena) utilizando una sintaxis específica, la sintaxis es la siguiente &larr; [start:stop:step]
 
-* ¿Cómo se obtiene una sublista usando slicing?
+* >¿Cómo se obtiene una sublista usando slicing?
 
 ### EN CODIGO &#8595;
 
@@ -84,7 +82,7 @@ print(mi_lista[0:4]) # Imprime 1, 2, 3, 4
 
 ```
 
-* ¿Qué significa dejar vacío el inicio o el final en el slicing?
+* >¿Qué significa dejar vacío el inicio o el final en el slicing?
 
 R/= Al dejar vacio el inicio en el slicing este asumira el indice 0, es decir que empezara por el primer elemento y al dejar vacio el final en el slicing este asumira el valor -1, es decir el indice final de la lista.
 
@@ -130,7 +128,7 @@ print(mi_lista[2:]) # Imprimira 30, 40, 50
 
 # 4. ¿Cómo modificamos los elementos de una lista?
 
-* ¿Cómo se cambia el valor de un elemento de la lista?
+* >¿Cómo se cambia el valor de un elemento de la lista?
 
 R/= El valor de un elemento en un arreglo se cambia de la siguiente manera:
 
@@ -141,7 +139,7 @@ mi_lista[3] = 99
 
 ```
 
-* ¿Qué pasa si modificamos un índice que no existe?
+* >¿Qué pasa si modificamos un índice que no existe?
 
 R/= Al intentar modificar un indice que no existe, python arrojara un error similiar al de intentar acceder a un indice que no existe, el error que muestra es: asignamiento de indice fuera de rango.
 
@@ -166,7 +164,7 @@ print(mi_lista) # Imprimira [10, 20, 99, 40]
 
 # 5. ¿Cómo agregamos nuevos elementos a una lista?
 
-* ¿Cómo se agrega un elemento al final de la lista?
+* >¿Cómo se agrega un elemento al final de la lista?
 
 R/= Para agregar un elemento al final de una lista se utiliza el metodo .append(elemento)
 
@@ -185,7 +183,7 @@ print(mi_lista) # Imprimira [10, 20, 30, 40, 50]
 
 ```
 
-* ¿Cómo se inserta un elemento en una posición específica?
+* >¿Cómo se inserta un elemento en una posición específica?
 
 R/= Para insertar un elemento en un indice especifico de una lista se usa el metodo .insert(indice, nuevo_elemento)
 
@@ -204,7 +202,7 @@ print(mi_lista) # Imprimira [2, 4, 5, 6, 8, 10]
 
 ```
 
-* ¿Cómo se combinan dos listas en una sola?
+* >¿Cómo se combinan dos listas en una sola?
 
 R/= Para combinar dos listas en una sola lista se usa el metodo .extend(lista_a_unir).
 
@@ -255,7 +253,7 @@ print(mi_lista) # Imprimira [10, 15, 20, 30, 40, 50, 60]
 
 # 6. ¿Cómo eliminamos elementos de una lista?
 
-* ¿Cómo se elimina un valor específico de una lista?
+* >¿Cómo se elimina un valor específico de una lista?
 
 R/= Para eliminar un valor especifico de una lista se usa el metodo .remove(valor)
 
@@ -274,7 +272,7 @@ print(mi_lista) # Imprimira [3, 6, 12]
 
 ```
 
-* ¿Qué hace el método pop()?
+* >¿Qué hace el método pop()?
 
 R/= El metodo pop() si no se le pasa un indice eliminara el ultimo elemento de la lista
 
@@ -293,7 +291,7 @@ mi_lista.pop()
 
 ```
 
-* ¿Cómo se elimina un elemento usando del?
+* >¿Cómo se elimina un elemento usando del?
 
 ## EJEMPLO PRACTICO
 
