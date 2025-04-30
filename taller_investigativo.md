@@ -2,7 +2,7 @@
 
 # 1. ¿Qué es un array o lista en Python?
 
-* >Investiga qué son los arrays (o listas) en Python y para qué se utilizan.
+* **Investiga qué son los arrays (o listas) en Python y para qué se utilizan.**
 
 R/= Son estructuras de datos versatiles que permiten almacenar una coleccion ordenada de elementos
 
@@ -14,7 +14,7 @@ R/= mi_lista = []
 
 R/= mi_lista = ["valor1", "valor2", "valor3"]
 
-### EJEMPLO PRACTICO ![alt text](imgs/image-1.png)
+### EJEMPLO PRACTICO 
 
 * Crea una lista llamada mi_lista con los números del 1 al 5.
 
@@ -44,7 +44,7 @@ R/= Los indices negativos permiten acceder a los elementos desde el final de una
 
 R/= Al intentar acceder a un indice inexistente de una lista, python arrojara un error diciendo que el indice de la lista esta fuera del rango.
 
-## EJEMPLO PRACTICO ![alt text](imgs/image-1.png)
+## EJEMPLO PRACTICO 
 
 * Crea una lista [10, 20, 30, 40] y muestra el primer y el último elemento.
 
@@ -100,7 +100,7 @@ print(mi_lista[7:]) # Imprimira desde el indice 7 hasta el 10
 
 ```
 
-## EJEMPLO PRACTICO ![alt text](imgs/image-1.png)
+## EJEMPLO PRACTICO
 
 - A partir de [10, 20, 30, 40, 50], obtén:
 
@@ -143,7 +143,7 @@ mi_lista[3] = 99
 
 R/= Al intentar modificar un indice que no existe, python arrojara un error similiar al de intentar acceder a un indice que no existe, el error que muestra es: asignamiento de indice fuera de rango.
 
-## EJEMPLO PRACTICO ![alt text](imgs/image-1.png)
+## EJEMPLO PRACTICO
 
 * Cambia el tercer elemento de [10, 20, 30, 40] por 99.
 
@@ -222,7 +222,7 @@ print(lista1) # Imprimira [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 ```
 
-## Ejemplo práctico ![alt text](imgs/image-1.png)
+## Ejemplo práctico:
 
 - A una lista [10, 20, 30] agrega:
     * El número 40 al final.
@@ -293,85 +293,9 @@ mi_lista.pop()
 
 * >¿Cómo se elimina un elemento usando del?
 
-## EJEMPLO PRACTICO ![alt text](imgs/image-1.png)
+## EJEMPLO PRACTICO
 
 - De la lista [10, 20, 30, 40, 50], realiza las siguientes acciones:
     * Elimina el número 30.
     * Elimina el último elemento.
     * Elimina el segundo elemento (índice 1).
-
-```python
-
-# Lista
-mi_lista = [10, 20, 30, 40, 50]
-
-# Eliminar el numero 30
-mi_lista.remove(30)
-
-# Eliminar el ultimo elemento
-mi_lista.pop()
-
-# Eliminar el segundo elemento (indice 1)
-mi_lista.del(1)
-
-```
-
----
-
-# 7. ¿Cómo buscamos elementos dentro de una lista?
-
-* >¿Cómo se verifica si un elemento está presente en una lista?
-
-R/= Para verificar si un elemento, cadena o valor se encuentra en una lista, se pueda el operador in.
-
-### EN CODIGO &#8595;
-
-```python
-
-# Lista
-mi_lista = ["Hola", "Pepe", "Carlos"]
-
-# Verificar si "Pepe" se encuentra en mi_lista
-print("Pepe" in mi_lista) # True
-
-```
-
-* >¿Cómo encontrar el índice de un elemento?
-
-R/= Para encontrar el indice de un elemento en una lista, se usa el metodo index(valor)
-
-### EN CODIGO &#8595;
-
-```python
-
-# Lista
-mi_lista = ["Hola", "Pepe", "Carlos"]
-
-# Encontrar el indice de "Carlos"
-print(mi_lista.index("Carlos")) # Indice 2
-
-```
-
-* >¿Cómo contar cuántas veces aparece un valor en la lista?
-
-R/= Para contar cuantas veces se repite un elemento en una lista se usa el metodo .count(elemento)
-
-### EN CODIGO &#8595;
-
-```python
-
-# Lista
-mi_lista = ["Hola", "Pepe", "Carlos"]
-
-# Encontrar el indice de "Carlos"
-print(mi_lista.index("Carlos")) # Indice 2
-
-```
-
-## EJEMPLO PRACTICO ![alt text](imgs/image-1.png)
-
-- Con la lista [10, 20, 30, 40, 50]:
-    * Verifica si el número 20 está en la lista.
-    * Encuentra el índice del número 30.
-    * Cuenta cuántas veces aparece el número 20.
-
